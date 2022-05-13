@@ -47,7 +47,7 @@ const Login = () => {
                 </div>
               </form>
               <div className="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
-                Don't have an account ?{" "}
+                Don't have an account ?
                 <a className="cursor-pointer text-sky-600 hover:text-sky-900">
                   Sign up
                 </a>

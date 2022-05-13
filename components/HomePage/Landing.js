@@ -25,7 +25,7 @@ export const Landing = () => {
         </div>
         <div className="relative flex-1 items-center bg-gray-0 content-end lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           {/* <span className="after:block after:absolute after:b-1 after:l-0 after:h-20 after:w-230 after:rounded after:bg-sky-900">.</span> */}
-          <div class="imgBox after:bg-sky-200">
+          <div className="imgBox after:bg-sky-200">
             <img
               className="flex-auto justify-center object-right object-cover h-50 w-100 ..."
               alt="hero"

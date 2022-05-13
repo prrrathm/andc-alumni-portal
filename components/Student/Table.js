@@ -26,10 +26,10 @@ function GlobalFilter({
   const count = preGlobalFilteredRows.length;
   const [value, setValue] = useState(globalFilter);
   const onChange = (value) => {
-    // setGlobalFilter(value || undefined);
-    useAsyncDebounce((value) => {
-      setGlobalFilter(value || undefined);
-    }, 500);
+    setGlobalFilter(value || undefined);
+    // useAsyncDebounce((value) => {
+    //   setGlobalFilter(value || undefined);
+    // }, 500);
   };
 
   return (
@@ -125,7 +125,7 @@ export function AvatarCell({ value, column, row }) {
   );
 }
 
-function Table({ columns, data }) {
+const Table = ({ columns, data }) => {
   // Use the state and functions returned from useTable to build your UI
   const {
     getTableProps,
@@ -263,7 +263,7 @@ function Table({ columns, data }) {
         <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
           <div className="flex gap-x-2 items-baseline">
             <span className="text-sm text-gray-700">
-              Page <span className="font-medium">{state.pageIndex + 1}</span> of{" "}
+              Page <span className="font-medium">{state.pageIndex + 1}</span> of
               <span className="font-medium">{pageOptions.length}</span>
             </span>
             <label>

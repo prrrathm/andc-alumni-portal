@@ -32,7 +32,7 @@ const column = [
     filter: 'includes',
   },
 ];
-const students = () => {
+const Students = () => {
   const columns = useMemo(() => column, []);
 
   const data = useMemo(() => alumniDB, []);
@@ -60,4 +60,4 @@ const students = () => {
   );
 };
 
-export default students;
+export default Students;

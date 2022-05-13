@@ -1,0 +1,110 @@
+.form-fields {
+  margin: 5px 10px;
+}
+
+.register-form,
+button {
+  margin: 5px;
+}
+
+.register-form {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 5rem;
+}
+.register-form .container {
+  position: relative;
+  z-index: 1;
+  /* background-color: aquamarine; */
+  height: 80vh;
+}
+.register-form .container h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  color: #eeeeee3e;
+  -webkit-text-stroke: 2px  #101010;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;  
+  /* background-color: red; */
+  z-index: 4;
+  text-align: left;
+}
+.register-form .container::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  height: 80vh;
+  width: 40%;
+  background-image: url("/media-files/girls-looking-at-phone.png");
+  z-index: 3;
+  background-size: cover;
+}
+.form-parent-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcdc51;
+  color: #1B262C;
+  height: 80vh;
+  border-radius: 40px;
+  border: 3px solid #1B262C;
+}
+.form-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: #efefef;
+  padding: 10px;
+  margin: 0 20px 20px 20px;
+  position: relative;
+  border: 1px solid #909090;
+  border-radius: 10px;
+  justify-content: left;
+  align-items: left;
+  /* color: #eee; */
+  scrollbar-color: red;
+  z-index: 0;
+}
+
+.form-box .close-btn {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  color: red;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 160%;
+}
+
+.form-box .close-btn :hover {
+  color: #fff;
+}
+
+.form-box .form-control {
+  margin: 0 10px 10px 0px;
+  width: 90%;
+}
+
+.add-btn {
+  /* display: block; */
+  /* position: absolute;
+  left: 0; */
+  padding: 0 5px;
+  margin: 0 20px;
+  font-size: 1.5rem;
+}
+.form-parent-box .form-control {
+  margin: 10px 0;
+}
+/* .journey-button */

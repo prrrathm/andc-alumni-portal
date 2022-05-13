@@ -1,17 +1,3 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer {
   display: flex;
   flex: 1;
@@ -113,4 +99,29 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+.numbers {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 10px 6rem;
+}
+
+.numbers .numberBox {
+  margin: 0 20px;
+}
+.numbers * {
+  max-width: 50%;
+}
+.about h1 {
+  font-size: 5rem;
+}
+.numbers h1,
+.about h1 {
+  font-weight: 900;
+}
+.numbers .numberBox h1 {
+  color: #3282b8;
 }

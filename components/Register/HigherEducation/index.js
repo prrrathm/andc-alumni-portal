@@ -15,47 +15,47 @@ export const HigherEducation = ({ props }) => {
               <div className="mt-10 sm:mt-0">
                 <div className="grid grid-cols-2 md:grid md:grid-cols-3 md:gap-6">
                   <div className="md:col-span-1">
-                  <div className="px-4 sm:px-0">
-                        <h3 className="text-lg font-medium leading-6 text-gray-900">
-                          Higher Education
-                        </h3>
-                        <p className="mt-1 text-sm text-gray-600">
-                          Use an email where you can receive mail.
-                        </p>
-                        <button
-                          type="button"
-                          className="my-2 bg-sky-700 rounded p-2 text-center text-slate-100  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 ..."
-                          onClick={() =>
-                            push({
-                              course: "",
-                              year: "",
-                              institute: "",
-                            })
-                          }
-                        >
-                          <PlusIcon
-                            className="h-6 w-6 float-right"
-                            aria-hidden="true"
-                          />
-                        </button>
-                      </div>
+                    <div className="px-4 sm:px-0">
+                      <h3 className="text-lg font-medium leading-6 text-gray-900">
+                        Higher Education
+                      </h3>
+                      <p className="mt-1 text-sm text-gray-600">
+                        Use an email where you can receive mail.
+                      </p>
+                      <button
+                        type="button"
+                        className="my-2 bg-sky-700 rounded p-2 text-center text-slate-100  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 ..."
+                        onClick={() =>
+                          push({
+                            course: "",
+                            year: "",
+                            institute: "",
+                          })
+                        }
+                      >
+                        <PlusIcon
+                          className="h-6 w-6 float-right"
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
                   </div>
 
                   <div className="md:mt-0 md:col-span-2">
                     {higherEducation.length >= 0 &&
                       higherEducation.map((higherEducation, index) => (
-                        <div className="my-5 shadow overflow-hidden sm:rounded-md">
-                          <div
-                            className="px-4 py-2 bg-white   "
-                            key={index + 1}
-                          >
+                        <div
+                          className="my-5 shadow overflow-hidden sm:rounded-md"
+                          key={index + 1}
+                        >
+                          <div className="px-4 py-2 bg-white   ">
                             <div className="sm:p-6 grid grid-cols-12 gap-6">
                               <div className="col-span-6 sm:col-span-3 ">
                                 <label
                                   htmlFor="last-name"
                                   className="block text-sm font-medium text-gray-700"
                                 >
-                                  Course 
+                                  Course
                                 </label>
 
                                 <Field
@@ -95,11 +95,7 @@ export const HigherEducation = ({ props }) => {
                                   onChange={props.handleChange}
                                   as="select"
                                 >
-                                  <option
-                                    value=""
-                                    key="1"
-                                    label="Year"
-                                  />
+                                  <option value="" key="1" label="Year" />
                                   {yearList.map((year) => (
                                     <option
                                       value={year}

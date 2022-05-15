@@ -51,11 +51,11 @@ export const WorkExperience = ({ props }) => {
                     <div className="md:mt-0 md:col-span-2">
                       {workExperience.length >= 0 &&
                         workExperience.map((workExperience, index) => (
-                          <div className="my-5 shadow overflow-hidden sm:rounded-md">
-                            <div
-                              className="px-4 py-2 bg-white   "
-                              key={index + 1}
-                            >
+                          <div
+                            className="my-5 shadow overflow-hidden sm:rounded-md"
+                            key={index + 1}
+                          >
+                            <div className="px-4 py-2 bg-white   ">
                               <div className="sm:p-6 grid grid-cols-6 gap-6">
                                 <div className="col-span-2 sm:col-span-2 ">
                                   <label
@@ -196,9 +196,7 @@ export const WorkExperience = ({ props }) => {
                                     Organisation?
                                   </div>
                                   <div className="col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
-                                  <label>
-                                    Yes
-                                    </label>
+                                    <label>Yes</label>
                                     <Field
                                       type="radio"
                                       className="focus:ring-indigo-500 mx-2 py-1 h-4 w-4 text-indigo-600 border-gray-300"
@@ -210,10 +208,7 @@ export const WorkExperience = ({ props }) => {
                                     />
                                   </div>
                                   <div className="col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
-                                    
-                                  <label>
-                                    No
-                                    </label>
+                                    <label>No</label>
                                     <Field
                                       type="radio"
                                       className="focus:ring-indigo-500 mx-2 py-1 h-4 w-4 text-indigo-600 border-gray-300 "
@@ -222,7 +217,7 @@ export const WorkExperience = ({ props }) => {
                                       // onChange={props.handleChange = ()=>{workExperience.currentOrg = "no"}}
                                       onChange={props.handleChange}
                                     />
-                                </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>

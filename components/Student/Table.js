@@ -132,7 +132,7 @@ const Table = ({ columns, data }) => {
     getTableBodyProps,
     headerGroups,
     prepareRow,
-    page, 
+    page,
     canPreviousPage,
     canNextPage,
     pageOptions,
@@ -333,6 +333,6 @@ const Table = ({ columns, data }) => {
       </div>
     </>
   );
-}
+};
 
 export default Table;

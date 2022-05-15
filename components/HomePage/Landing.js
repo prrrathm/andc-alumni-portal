@@ -11,6 +11,7 @@ export const Landing = () => {
               className="text-white outline-title "
               href="https://www.andcollege.du.ac.in/"
               target="_blank"
+              rel="noreferrer"
               style={{ WebkitTextStroke: "3px #0c4a6e" }}
             >
               {"  "}ANDC

@@ -19,8 +19,8 @@ export const ContactInfo = ({ props }) => {
           <div className="mt-5 md:mt-0 md:col-span-2">
             <div className="shadow overflow-hidden sm:rounded-md">
               <div className="px-4 py-5 bg-white sm:p-6">
-                <div className="grid grid-cols-8  gap-6 ">
-                  <div className="col-span-6 md:col-span-4 grid grid-cols-4">
+                <div className="grid grid-cols-2  gap-6 ">
+                  <div className="col-span-2 md:col-span-1 grid grid-cols-4">
                     <label
                       htmlFor="first-name gap-1"
                       className="font-black text-gray-700 col-span-1 flex items-center justify-center text-2xl"
@@ -37,7 +37,7 @@ export const ContactInfo = ({ props }) => {
                     />
                   </div>
 
-                  <div className="col-span-6 md:col-span-4 grid grid-cols-4">
+                  <div className="col-span-2 md:col-span-1 grid grid-cols-4">
                     <label
                       htmlFor="last-name"
                       className="font-black text-gray-700 col-span-1 flex items-center justify-center text-2xl"

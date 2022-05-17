@@ -86,7 +86,7 @@ export const WorkExperience = ({ props }) => {
                                     name={`workExperience.${index}.organisation`}
                                   />
                                 </div>
-                                <div className="grid col-span-2 sm:col-span-2 justify-items-center">
+                                <div className="grid col-span-6 md:col-span-2 justify-items-center">
                                   <button
                                     type="button"
                                     className="mt-1 pl-3 sm:text-sm float-right"
@@ -98,7 +98,7 @@ export const WorkExperience = ({ props }) => {
                                     />
                                   </button>
                                 </div>
-                                <div className="col-span-3 gap-2 grid grid-cols-4">
+                                <div className="col-span-6 gap-2 grid grid-cols-4">
                                   <label className="col-span-4 text-sm font-medium text-gray-700">
                                     Start Date
                                   </label>
@@ -119,7 +119,7 @@ export const WorkExperience = ({ props }) => {
                                     ))}
                                   </Field>
                                   <Field
-                                    className="col-span-2 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
+                                    className="col-span-6 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
                                     type="text"
                                     name={`workExperience.${index}.startYear`}
                                     onChange={props.handleChange}
@@ -135,17 +135,17 @@ export const WorkExperience = ({ props }) => {
                                     ))}
                                   </Field>
                                 </div>
-                                <div className="col-span-3 gap-2 grid grid-cols-4">
+                                <div className="col-span-6 gap-2 grid grid-cols-2">
                                   {workExperience.currentOrg == "no" ? (
                                     <>
                                       <label
                                         htmlFor="last-name"
-                                        className="col-span-4 text-sm font-medium text-gray-700"
+                                        className="col-span-2 text-sm font-medium text-gray-700"
                                       >
                                         End Date
                                       </label>
                                       <Field
-                                        className="col-span-2 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
+                                        className="col-span-1 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
                                         type="text"
                                         name={`workExperience.${index}.endMonth`}
                                         onChange={props.handleChange}
@@ -165,7 +165,7 @@ export const WorkExperience = ({ props }) => {
                                         ))}
                                       </Field>
                                       <Field
-                                        className="col-span-2 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
+                                        className="col-span-1 my-1 w-full py-2 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm text-gray-500"
                                         type="text"
                                         name={`workExperience.${index}.endYear`}
                                         onChange={props.handleChange}

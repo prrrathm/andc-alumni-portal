@@ -4,7 +4,7 @@ import { Numbers } from "./Numbers";
 const HomePage = () => {
   return (
   <>
-    <Landing />;
+    <Landing />
     <Numbers />
   </>
   )

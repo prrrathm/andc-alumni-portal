@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 inset-x-0 text-gray-600 body-font">
+    <header className="fixed top-0 inset-x-0 text-gray-600 body-font bg-white z-20">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link href="/">
-          <a className="flex title-font cursor-pointer font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a className="flex title-font cursor-pointer font-medium items-center text-gray-900 mb-2 md:mb-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -28,11 +28,11 @@ const Navbar = () => {
               Home
             </a>
           </Link>
-          <Link href="/about">
+          {/* <Link href="/about">
             <a className="mr-5 hover:text-gray-900 hover:font-700 hover:underline underline-offset-2 cursor-pointer">
               About
             </a>
-          </Link>
+          </Link> */}
           <Link href="/register">
             <a className="mr-5 hover:text-gray-900 hover:font-700 hover:underline underline-offset-2 cursor-pointer">
               Register
@@ -40,12 +40,11 @@ const Navbar = () => {
           </Link>
           <Link href="/students">
             <a className="mr-5 hover:text-gray-900 hover:font-700 hover:underline underline-offset-2 cursor-pointer">
-              Students
+              Admin
             </a>
           </Link>
-        </nav>
         <Link href="/login">
-        <button className="inline-flex items-center bg-sky-900 text-gray-100 font-black py-1 px-3 hover:bg-gray-50 hover:text-sky-900 border-2 border-sky-900 rounded text-base mt-4 md:mt-0 cursor-pointer hover:scale-140">
+        <button className="inline-flex items-center bg-sky-900 text-gray-100 font-black py-0.5 px-1 hover:bg-gray-50 hover:text-sky-900 border-2 border-sky-900 rounded text-base mt-1 md:mt-0 cursor-pointer hover:scale-140">
           Login
           <svg
             fill="none"
@@ -60,6 +59,8 @@ const Navbar = () => {
           </svg>
         </button>
         </Link>
+        
+        </nav>
       </div>
     </header>
   );

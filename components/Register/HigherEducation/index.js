@@ -13,14 +13,14 @@ export const HigherEducation = ({ props }) => {
           return (
             <div className="">
               <div className="mt-10 sm:mt-0">
-                <div className="grid grid-cols-2 md:grid md:grid-cols-3 md:gap-6">
+                <div className="grid grid-cols-1 md:grid md:grid-cols-3 md:gap-6">
                   <div className="md:col-span-1">
                     <div className="px-4 sm:px-0">
                       <h3 className="text-lg font-medium leading-6 text-gray-900">
                         Higher Education
                       </h3>
                       <p className="mt-1 text-sm text-gray-600">
-                        Use an email where you can receive mail.
+                        Your Academic journey after ANDC.
                       </p>
                       <button
                         type="button"
@@ -49,7 +49,7 @@ export const HigherEducation = ({ props }) => {
                           key={index + 1}
                         >
                           <div className="px-4 py-2 bg-white   ">
-                            <div className="sm:p-6 grid grid-cols-12 gap-6">
+                            <div className="sm:p-6 grid md:grid-cols-12 gap-6">
                               <div className="col-span-6 sm:col-span-3 ">
                                 <label
                                   htmlFor="last-name"

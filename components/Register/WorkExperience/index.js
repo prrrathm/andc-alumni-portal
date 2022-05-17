@@ -16,7 +16,7 @@ export const WorkExperience = ({ props }) => {
             <div className="form-flex">
               <div className="">
                 <div className="mt-10 sm:mt-0">
-                  <div className="grid grid-cols-2 md:grid md:grid-cols-3 md:gap-6">
+                  <div className="grid grid-cols-1 md:grid md:grid-cols-3 md:gap-6">
                     <div className="md:col-span-1">
                       <div className="px-4 sm:px-0">
                         <h3 className="text-lg font-medium leading-6 text-gray-900">
@@ -56,8 +56,8 @@ export const WorkExperience = ({ props }) => {
                             key={index + 1}
                           >
                             <div className="px-4 py-2 bg-white   ">
-                              <div className="sm:p-6 grid grid-cols-6 gap-6">
-                                <div className="col-span-2 sm:col-span-2 ">
+                              <div className="sm:p-6 grid grid-cols-1 md:grid-cols-6 gap-6">
+                                <div className="grid md:grid-cols-1 col-span-6 sm:col-span-2 ">
                                   <label
                                     htmlFor="last-name"
                                     className="block text-sm font-medium text-gray-700"
@@ -71,7 +71,7 @@ export const WorkExperience = ({ props }) => {
                                     className="mt-1 py-2 block w-full px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
                                   />
                                 </div>
-                                <div className="col-span-2 sm:col-span-2">
+                                <div className="grid md:grid-cols-1 col-span-6 sm:col-span-2">
                                   <label
                                     htmlFor="last-name"
                                     className="block text-sm font-medium text-gray-700"
@@ -179,11 +179,6 @@ export const WorkExperience = ({ props }) => {
                                             label={year}
                                           />
                                         ))}
-                                        <option
-                                          value="Present"
-                                          key="-1"
-                                          label="Present"
-                                        />
                                       </Field>
                                     </>
                                   ) : (
@@ -195,7 +190,7 @@ export const WorkExperience = ({ props }) => {
                                     Are you currently working for this
                                     Organisation?
                                   </div>
-                                  <div className="col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
+                                  <div className="col-span-6 md:col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
                                     <label>Yes</label>
                                     <Field
                                       type="radio"
@@ -207,7 +202,7 @@ export const WorkExperience = ({ props }) => {
                                       // onChange={props.handleChange = ()=>{workExperience.currentOrg = "yes"}}
                                     />
                                   </div>
-                                  <div className="col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
+                                  <div className="col-span-6 md:col-span-1 flex items-center mx-3 text-sm font-medium text-gray-700">
                                     <label>No</label>
                                     <Field
                                       type="radio"

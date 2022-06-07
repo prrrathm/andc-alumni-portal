@@ -5,6 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+# install packages
+npm install --legacy-peer-deps
+# or 
+yarn add --legacy-peer-deps
+
 npm run dev
 # or
 yarn dev
